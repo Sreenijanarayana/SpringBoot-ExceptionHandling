@@ -13,7 +13,7 @@ public int errorCode;
 	public Date date;
  }
 
- -> Inside which we create methods that uses @ExceptionHandler annotation there we specify the exception, these methods appropriate status code and error message 
+ -> Inside which we create methods that uses @ExceptionHandler annotation there we can specify the exception, these methods return appropriate status code and error message 
  @ControllerAdvice
  public class RestExceptionHandler {
     @ExceptionHandler(value = NoStudentFoundError.class)
